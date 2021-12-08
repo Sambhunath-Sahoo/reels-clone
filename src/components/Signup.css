@@ -1,0 +1,9 @@
+.signup__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.signup__card {
+    width: 27vw;
+    margin: 5%;
+}

@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Signup from './components/Signup'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lets Build Reels Clone🚀</h1>
-    </div>
+    <Signup />
   );
 }
 
 export default App;
+
