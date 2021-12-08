@@ -1,0 +1,50 @@
+.login__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.login__card {
+  width: 27vw;
+  margin: 5%;
+}
+
+.login__logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.login__logo img {
+  width: 15vw;
+}
+
+.login_carousel {
+  margin-top: 8vh;
+  height: 590px;
+  width: 441px;
+  position: relative;
+}
+
+.car {
+  height: 423px;
+  width: 241px;
+  position: absolute;
+  left: 143px;
+  top: 93px;
+}
+
+@media only screen and (max-width: 620px) {
+  .login__card {
+    width: 60%;
+  }
+
+  .longin__logo img {
+    width: 35vw;
+  }
+
+  .login_carousel {
+    display: none;
+  }
+}

@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import insta from "../Assets/Instagram.JPG";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 
-export default function Login() {
+export default function Signup() {
     // appled manual style for card
     const useStyles = makeStyles({
         text1: {
