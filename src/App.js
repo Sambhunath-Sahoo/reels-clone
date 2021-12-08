@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Signup from './components/Signup'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lets Build Reels Clone🚀</h1>
-    </div>
+    <BrowserRouter >
+      <Signup />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
