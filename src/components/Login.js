@@ -86,7 +86,7 @@ export default function Login() {
                         <img src={insta} alt="" />
                     </div>
                     <CardContent>
-                        {true != "" && <Alert severity="error">Wrong Password</Alert>}
+                        {true !== "" && <Alert severity="error">Wrong Password</Alert>}
                         <TextField
                             id="outlined-basic"
                             label="Email"
