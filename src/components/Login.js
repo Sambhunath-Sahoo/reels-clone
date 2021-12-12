@@ -3,12 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Button, CardActions } from "@mui/material";
-import {
-    CarouselProvider,
-    Slider,
-    Slide,
-    Image,
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, Image } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { makeStyles } from "@mui/styles";
 import Alert from "@mui/material/Alert";
@@ -17,16 +12,14 @@ import insta from "../Assets/Instagram.JPG";
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
 
-import bg from '../Assets/insta.png'
+import bg from "../Assets/insta.png";
 import img1 from "../Assets/img1.jpg";
 import img2 from "../Assets/img2.jpg";
 import img3 from "../Assets/img3.jpg";
 import img4 from "../Assets/img4.jpg";
 import img5 from "../Assets/img5.jpg";
 
-
 export default function Login() {
-
     const useStyles = makeStyles({
         text1: {
             color: "grey",
@@ -112,11 +105,7 @@ export default function Login() {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button
-                            color="primary"
-                            fullWidth={true}
-                            variant="contained"
-                        >
+                        <Button color="primary" fullWidth={true} variant="contained">
                             Log in
                         </Button>
                     </CardActions>

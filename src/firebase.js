@@ -1,8 +1,7 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/storage';
-import 'firebase/compat/firestore';
-
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/storage";
+import "firebase/compat/firestore";
 
 // web app's Firebase configuration
 const firebaseConfig = {
@@ -11,7 +10,7 @@ const firebaseConfig = {
   projectId: "reels-b2732",
   storageBucket: "reels-b2732.appspot.com",
   messagingSenderId: "726229681307",
-  appId: "1:726229681307:web:aee5c93dcca09a2c39723e"
+  appId: "1:726229681307:web:aee5c93dcca09a2c39723e",
 };
 
 // Initialize Firebase
@@ -24,9 +23,8 @@ export const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 export const database = {
-  user : firebase.collection('users'),
-  getTimeStamp : firebase.firestore.FieldValue.getTimeStamp
-}
+  user: firebase.collection("users"),
+  getTimeStamp: firebase.firestore.FieldValue.getTimeStamp,
+};
 
 export const storage = firebase.storage();
-
