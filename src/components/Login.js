@@ -51,7 +51,8 @@ export default function Login() {
     const handleClick = async () => {
         try {
             setError('');
-            setLoading(true)
+            setLoading(true);
+            // calling login to Global Store
             let res = await login(email, password);
             setLoading(false);
             history.push('/')
