@@ -25,6 +25,8 @@ const firestore = firebase.firestore();
 export const database = {
   // users collection will be store in firestore i.e. (firestore.collection) 
   users: firestore.collection('users'),
+  posts: firestore.collection('posts'),
+  comments: firestore.collection('comments'),
   getTimeStamp: firebase.firestore.FieldValue.serverTimestamp,
 };
 

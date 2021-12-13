@@ -55,7 +55,8 @@ export default function Login() {
             // calling login to Global Store
             let res = await login(email, password);
             setLoading(false);
-            history.push('/')
+            // after sucessfull login changing the rout to '/' or feed page
+            history.push('/');
         } catch (err) {
             setError(err);
             setTimeout(() => {
