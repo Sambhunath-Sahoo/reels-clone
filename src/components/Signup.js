@@ -2,9 +2,9 @@ import * as React from 'react';
 import {useState,useContext} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActions } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
 import { makeStyles } from '@mui/styles';
 import Alert from '@mui/material/Alert';
 import './Signup.css'
@@ -117,7 +117,7 @@ export default function Signup() {
                             Sign up to see photos and videos from your friends
                         </Typography>
 
-                        {error != "" && <Alert severity="error">{error}</Alert>}
+                        {error !== "" && <Alert severity="error">{error}</Alert>}
                         <TextField
                             id="outlined-basic"
                             label="Email"
@@ -167,7 +167,7 @@ export default function Signup() {
                     </CardContent>
 
                     <CardActions>
-                        <Button color="primary" fullWidth={true} variant="contained" disabled={loading} onClick={handleClick}>
+                        <Button color="primary" fullWidth={true} variant="contained" disabled={loading} onClick={handleClick} startIcon={ loading && React.cloneElement(<CircularProgress/>)}>
                             Sign up
                         </Button>
                     </CardActions>

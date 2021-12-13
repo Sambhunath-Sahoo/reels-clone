@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel';
+import CircularProgress from '@mui/material/CircularProgress';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { makeStyles } from '@mui/styles';
 import Alert from '@mui/material/Alert';
@@ -116,7 +117,7 @@ export default function Login() {
                         <img src={insta} alt="" />
                     </div>
                     <CardContent>
-                        {error != "" && <Alert severity="error">{error}</Alert>}
+                        {error !== "" && <Alert severity="error">{error}</Alert>}
                         <TextField
                             id="outlined-basic"
                             label="Email"
@@ -152,6 +153,7 @@ export default function Login() {
                             variant="contained"
                             onClick={handleClick}
                             disabled={loading}
+                            startIcon={ loading && React.cloneElement(<CircularProgress/>)}
                         >
                             Log in
                         </Button>
